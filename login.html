@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>.::LOGIN/REGISTRO::.</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&display=swap" rel="stylesheet"> 
+    <link rel="stylesheet" href="./css/login.css">
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+</head>
+<body>
+    <header></header>
+    <main class="contenedor">
+        <section class="contenedor__opciones">
+            <a href="./index.html" class="icono-cerrar">
+            </a>
+            <div id="panel_login" class="login">
+                <div>
+                    <h1>INICIAR SESIÓN</h1>
+                </div>
+                <label for="usuario">
+                    <input type="text" placeholder="Usuario" id="usuario">
+                </label>
+                <label for="clave">
+                    <input type="password" placeholder="Contraseña" id="clave">
+                </label>
+                <button id="boton_login">Entrar</button>
+            </div>
+            <div id="panel_registro" class="registro">
+                <div>
+                    <h1>REGÍSTRARSE</h1>
+                </div>
+                <label for="email">
+                    <input type="text" placeholder="Correo" id="email">
+                </label>
+                <label for="contrasena">
+                    <input type="password" placeholder="Contraseña" id="contrasena">
+                </label>
+                <button id="boton_registrarse">Regístrarse</button>
+            </div>
+            <div class="opciones">
+                <h1 id="titulo_opciones">¿Aun no tienes una cuenta?</h1>
+                <p id="texto_opciones">Registrate para iniciar sesión</p>
+                <button id="boton_opciones">Regístrarse</button>
+            </div>
+        </section>
+    </main>
+    <footer></footer>
+    <script src="./js/login.js"></script>
+</body>
+</html>

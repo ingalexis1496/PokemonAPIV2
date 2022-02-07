@@ -1,0 +1,156 @@
+:root {
+    /* COLORES */
+    --color-blanco: #FFFFFF;
+    --color-blanco-transparente: rgba(255, 255, 255, 0);
+    --color-gris: #454745;
+    --color-negro: #000000;
+    --color-negro-transparente: rgba(0, 0, 0, .2);
+    --color-verde: #52C544;
+    --color-verde-transparente: rgba(82, 197, 68, .7);  
+
+    /* FUENTES */
+    --fuente-texto: 1.6rem;
+    --fuente-titulo: 2rem;
+}
+
+html {
+    font-family: 'DM Sans', sans-serif;
+    font-size: 62.5%;
+    font-weight: 400;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+.contenedor {
+    align-items: center;
+    background-image: url("../image/fondo-login.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    height: 100vh;
+    max-width: 100vw;
+    width: 100vw;
+}
+
+.contenedor__opciones {
+    align-items: center;
+    background-color:var(--color-verde-transparente);
+    border-radius: .5rem;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    height: 40rem;
+    justify-content: flex-end;
+    position: relative;
+    width: 100rem;
+}
+
+.icono-cerrar {
+    background-image: url("../image/icono-cerrar.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: inline-block;
+    height: 2em;
+    left: 1rem;
+    position: absolute;
+    top: 1rem;
+    width: 2rem;
+}
+
+label, input {
+    display: block;
+}
+
+.login, .registro {
+    align-items: center;
+    background-color: var(--color-negro);
+    border: .2rem solid var(--color-verde);
+    border-radius: 1rem;
+    box-shadow: .6rem .6rem .1rem .1rem var(--color-negro-transparente);
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    min-height: 55rem;
+    justify-content: center;
+    left: 12rem;
+    padding: 2rem;
+    position: absolute;
+    top: -7rem;
+}
+
+.login > div, .registro > div {
+    text-align: center;
+}
+
+.login  h1, .registro h1 {
+    color: var(--color-verde);
+    font-size: var(--fuente-titulo);
+    font-weight: 700;
+}
+
+.login input, .registro input {
+    background-color: var(--color-gris);
+    border: none;
+    border-radius: .3rem;
+    color: var(--color-blanco);
+    font-size: var(--fuente-texto);
+    margin-top: 2rem;
+    outline: none;
+    padding: 1rem;
+    width: 30rem;
+}
+
+.login > button, .registro > button {
+    background-color: var(--color-verde);
+    border: none;
+    color: var(--color-blanco);
+    cursor: pointer;
+    font-size: var(--fuente-texto);
+    margin-top: 3rem;
+    padding: 1rem;
+    width: 15rem; 
+}
+
+.opciones {
+    display: inline-block;
+    margin-right: 10rem;
+    padding: 1rem;
+    text-align: start;
+}
+
+.opciones > h1 {
+    color: var(--color-blanco);
+    font-size: var(--fuente-titulo);
+    font-weight: 700;
+}
+
+.opciones > p {
+    color: var(--color-blanco);
+    font-size: var(--fuente-texto);
+    font-weight: 500;
+    margin-top: 1rem;
+}
+
+.opciones > button {
+    background-color: var(--color-blanco-transparente);
+    border: .2rem solid var(--color-blanco);
+    color: var(--color-blanco);
+    cursor: pointer;
+    font-size: var(--fuente-texto);
+    margin-top: 1rem;
+    padding: 1rem;
+}
+
+.opciones > button:hover {
+    background-color: var(--color-negro);
+    border: .2rem solid var(--color-verde);
+}
